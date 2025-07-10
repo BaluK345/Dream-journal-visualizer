@@ -30,71 +30,77 @@ This Streamlit-based app lets you submit a dream description and generates a dre
 
 ## 📦 Setup Instructions
 
-### 🔧 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/yourusername/dream-journal-ai.git
 cd dream-journal-ai
+```
 
-🐍 2. Create Virtual Environment
-bash
-Copy
-Edit
+### 2. Create Virtual Environment
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-📦 3. Install Dependencies
-bash
-Copy
-Edit
+```
+
+### 3. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-<details> <summary>📌 Example requirements.txt</summary>
-nginx
-Copy
-Edit
+```
+
+<details>
+<summary>📌 Example <code>requirements.txt</code></summary>
+
+```
 torch
 transformers
 diffusers
 Pillow
 streamlit
+```
 </details>
-🧠 4. Authenticate with Hugging Face
-Sign in to https://huggingface.co
 
-Accept the license for Stable Diffusion v1.5
-👉 https://huggingface.co/runwayml/stable-diffusion-v1-5
+### 4. Authenticate with Hugging Face
 
-Run:
+- Sign in to [Hugging Face](https://huggingface.co)
+- Accept the license for [Stable Diffusion v1.5](https://huggingface.co/runwayml/stable-diffusion-v1-5)
+- Run:
 
-bash
-Copy
-Edit
+```bash
 huggingface-cli login
-Paste your token.
+```
 
-🎨 5. Run the App
-bash
-Copy
-Edit
+- Paste your token.
+
+### 5. Run the App
+
+```bash
 streamlit run app.py
-Open http://localhost:8501 in your browser.
+```
 
-🧪 Example Prompts
+Open [http://localhost:8501](http://localhost:8501) in your browser.
+
+---
+
+## 🧪 Example Prompts
+
 Try pasting these dream descriptions in the app:
 
-➤ “Flying Through a Neon City”
-css
-Copy
-Edit
-I was flying over a futuristic city filled with neon lights and floating cars. The sky was purple, and everything felt calm and surreal.
-➤ “Forest of Whispers”
-css
-Copy
-Edit
-I walked through a glowing forest where the trees whispered ancient secrets. There were mushrooms lighting my path.
-📁 Folder Structure
-bash
-Copy
-Edit
+**➤ “Flying Through a Neon City”**
+
+_I was flying over a futuristic city filled with neon lights and floating cars. The sky was purple, and everything felt calm and surreal._
+
+**➤ “Forest of Whispers”**
+
+_I walked through a glowing forest where the trees whispered ancient secrets. There were mushrooms lighting my path._
+
+---
+
+## 📁 Folder Structure
+
+```
 dream_journal/
 ├── app.py              # Main Streamlit app
 ├── image_gen.py        # Stable Diffusion pipeline
@@ -102,19 +108,22 @@ dream_journal/
 ├── venv/               # Virtual environment
 ├── README.md
 └── requirements.txt
-💡 Future Ideas
-🧠 NLP analysis (keywords, sentiment)
+```
 
-🌐 Interactive dream network map (NetworkX + PyVis)
+---
 
-🗃 Save dreams to PostgreSQL
+## 💡 Future Ideas
 
-🧑‍🤝‍🧑 Community dream sharing
+- 🧠 NLP analysis (keywords, sentiment)
+- 🌐 Interactive dream network map (NetworkX + PyVis)
+- 🗃 Save dreams to PostgreSQL
+- 🧑‍🤝‍🧑 Community dream sharing
+- 📥 Download/share button
 
-📥 Download/share button
+---
 
-🙌 Author
-Balu K
-B.Tech AI & DS @ Karunya Institute of Technology and Sciences
+## 🙌 Author
+
+**Balu K**  
+B.Tech AI & DS @ Karunya Institute of Technology and Sciences  
 Frontend & Flutter Developer | Passionate about AI-powered apps
-
